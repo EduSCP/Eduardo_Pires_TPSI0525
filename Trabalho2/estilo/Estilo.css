@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid darkred;
+}
+
+header img {
+  height: 120px;
+}
+
+div {
+  background-color: #1a1a1a;
+  border: 2px solid darkred;
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  font-family: 'Creepster', cursive;
+  color: red;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p, li {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+li {
+    margin-left: 20px;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid red;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  background-color: #111;
+  color: white;
+}
+
+footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 10px;
+  border-top: 2px solid darkred;
+  margin-top: 40px;
+}
+
+.imagem-final {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.imagem-final img {
+  width: 100%;
+  display: block;
+  margin-top: 0;
+  border-top: 2px solid darkred;
+}
+
+.imagem-logo img{
+  filter: invert(13%) sepia(89%) saturate(7416%) hue-rotate(3deg) brightness(110%) contrast(115%);
+}
+
+.active {
+  font-weight: bold;
+  color: white;
+}
