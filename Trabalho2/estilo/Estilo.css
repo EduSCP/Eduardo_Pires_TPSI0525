@@ -172,3 +172,8 @@ footer {
 .perk-tooltip:hover::after {
   opacity: 1;
 }
+
+.divider {
+  margin: 0 3px;
+  display: inline-block;
+}
