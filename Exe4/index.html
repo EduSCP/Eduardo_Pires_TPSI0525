@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's That Pokémon?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Who's That Pokémon?</h1>
+
+    <div class="card-container">
+        <div class="card" id="pokemonCard">
+            <div class="card-face front" id="frontFace">
+                <span id="questionMark">?</span>
+            </div>
+            <div class="card-face back" id="backFace">
+                <img src="" alt="Pokémon" id="pokemonImage">
+                <p id="pokemonName"></p>
+            </div>
+        </div>
+    </div>
+
+    <button id="nextBtn">Next Pokémon</button>
+
+    <h2>Kanto Music Audio Playlist</h2>
+    <div class="youtube-audio-player-container">
+        <div id="currentTrackInfo">
+            <img src="Chatot.png" alt="Music Note" id="musicIcon">
+            <span id="currentTrackTitle">Loading...</span>
+        </div>
+        <div class="playlist-buttons">
+            <button id="nextTrack">Next Track</button>
+            <button id="shuffleTrack">Shuffle</button>
+        </div>
+    </div>
+
+    <div id="youtube-audio-player"></div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
