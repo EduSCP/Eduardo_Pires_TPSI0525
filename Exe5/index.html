@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Solar Dragon Ball</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Camadas de estrelas -->
+  <div class="estrelas camada1"></div>
+  <div class="estrelas camada2"></div>
+
+  <div class="parallax">
+    <!-- Planeta 1 - Goku & Vegeta -->
+    <div class="planeta" id="planeta1" data-personagem="Goku e Vegeta">
+      <img src="../Exe5/assets/Vegeta_Planet.jpg" class="imagem-planeta">
+      <div class="sprites">
+        <img src="../Exe5/assets/Goku.png" alt="Goku">
+        <img src="../Exe5/assets/Vegeta.png" alt="Vegeta">
+      </div>
+    </div>
+
+    <!-- Planeta 2 - Freeza -->
+    <div class="planeta" id="planeta2" data-personagem="Freeza">
+      <img src="../Exe5/assets/Freeza_Planet.jpg" class="imagem-planeta">
+      <div class="sprites">
+        <img src="../Exe5/assets/Freeza.png" alt="Freeza">
+      </div>
+    </div>
+
+    <!-- Planeta 3 - Piccolo -->
+    <div class="planeta" id="planeta3" data-personagem="Piccolo">
+      <img src="../Exe5/assets/Piccolo_Planet-jpg.jpg" class="imagem-planeta">
+      <div class="sprites">
+        <img src="../Exe5/assets/Piccolo.png" alt="Piccolo">
+      </div>
+    </div>
+
+    <!-- Planeta 4 - Gohan -->
+    <div class="planeta" id="planeta4" data-personagem="Gohan">
+      <img src="../Exe5/assets/Gohan_Planet.jpg" class="imagem-planeta">
+      <div class="sprites">
+        <img src="../Exe5/assets/Gohan.png" alt="Gohan">
+      </div>
+    </div>
+
+    <!-- Planeta 5 - Beerus -->
+    <div class="planeta" id="planeta5" data-personagem="Beerus">
+      <img src="../Exe5/assets/Beerus_Planet.jpg" class="imagem-planeta">
+      <div class="sprites">
+        <img src="../Exe5/assets/Beerus.png" alt="Beerus">
+      </div>
+    </div>
+
+    <!-- Pó cósmico -->
+    <canvas id="particles"></canvas>
+
+    <div class="info"></div>
+  </div>
+
+   <!-- Controlo de som -->
+  <div id="controlo-som">
+    <button id="botao-som">🔊 Som</button>
+  </div>
+
+  <!-- Player do YouTube invisível -->
+  <div id="youtube-player"></div>
+
+  <!-- API do YouTube -->
+  <script async src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
