@@ -42,39 +42,35 @@ function orbitar() {
 
 orbitar();
 
-// --- Som com YouTube --- //
-let player;
-let somAtivo = false;
-
-// ID da tua playlist do YouTube
 const PLAYLIST_ID = "PLUyw5a8M2mfZwo4Txu8-oMeK9Q0Aq2SPj";
+let player;
+let audioReady = false;
+let isMuted = false;
 
-window.onYouTubeIframeAPIReady = function() {
-  player = new YT.Player("youtube-player", {
-    height: "0",
-    width: "0",
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('youtube-player-container', {
+    height: '0',
+    width: '0',
     playerVars: {
-      listType: "playlist",
-      list: PLAYLIST_ID,
       autoplay: 0,
       controls: 0,
+      modestbranding: 1,
       loop: 1,
-      modestbranding: 1
+      listType: 'playlist',
+      list: PLAYLIST_ID
+    },
+    events: {
+      'onReady': () => { audioReady = true; },
     }
   });
-};
+}
 
-const botaoSom = document.getElementById("botao-som");
-
-botaoSom.addEventListener("click", () => {
-  if (!player) return;
-  if (!somAtivo) {
+// Começar música com clique inicial
+function startMusic() {
+  if (audioReady && player && player.playVideo) {
+    player.setShuffle(true);
     player.playVideo();
-    botaoSom.textContent = "🔇 Som";
-    somAtivo = true;
-  } else {
-    player.pauseVideo();
-    botaoSom.textContent = "🔊 Som";
-    somAtivo = false;
+    document.removeEventListener('click', startMusic);
   }
-});
+}
+document.addEventListener('click', startMusic);
