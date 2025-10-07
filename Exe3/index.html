@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Álbum de Fotografias</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>Meu Álbum de Fotografias</header>
+
+  <nav>
+    <button class="ativo" data-seccao="me">Eu</button>
+    <button data-seccao="family">Família</button>
+    <button data-seccao="friends">Amigos</button>
+    <button data-seccao="pets">Animais de Estimação</button>
+    <button data-seccao="trips">Viagens</button>
+  </nav>
+
+  <main>
+    <div class="album">
+      <div class="pagina" id="pagina-esquerda"></div>
+      <div class="pagina" id="pagina-direita"></div>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <span class="fechar-lightbox">&times;</span>
+    <img src="" alt="Imagem Ampliada">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
