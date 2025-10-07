@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game of Thrones - Casas Nobres</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Casas Nobres de Westeros</h1>
+  <p>Clica numa casa para veres o seu lema:</p>
+
+  <div class="botoes">
+    <button onclick="mostrarLema('stark')">Casa Stark</button>
+    <button onclick="mostrarLema('lannister')">Casa Lannister</button>
+    <button onclick="mostrarLema('targaryen')">Casa Targaryen</button>
+    <button onclick="mostrarLema('baratheon')">Casa Baratheon</button>
+  </div>
+
+  <div id="resultado">
+    <img id="bandeira" src="" alt="" style="display:none;">
+    <p id="lema"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

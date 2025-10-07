@@ -1,0 +1,63 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #0b0c10;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 40px;
+  background-image: url('../Exe2/assets/background.jpg') ;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 2em;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px #000;
+}
+
+button {
+  background-color: #222;
+  color: #ffcc00;
+  border: 2px solid #ffcc00;
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffcc00;
+  color: #222;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 500px;
+}
+
+#bandeira {
+  width: 180px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  animation: fadeIn 1s ease;
+}
+
+#lema {
+  font-size: 1.3em;
+  font-style: italic;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
